@@ -22,14 +22,13 @@
 
     <main>
         <h2 id="attendance-list">attendance-list</h2>
-        <ul>
-            <h3>person1</h3>
-            <h3>person2</h3>
-            <h3>person3</h3>
-            <h3>person4</h3>
-        </ul>
-
-        <h2 id="agenda item">agenda-item</h2>
+        
+        <h3>person1</h3>
+        <h3>person2</h3>
+        <h3>person3</h3>
+        <h3>person4</h3>
+        
+        <h2 id="agenda-item">agenda-item</h2>
         <ol>
             <li><i> agenda</i> of what the meeting will cover</li>
             <li>things that were <em> unfinished business from last meeting</em></li>
@@ -74,7 +73,7 @@
         <div>div example</div>
         <span>span example</span>
 
-        <form action="" method="get" class="form example">
+        <form method="get" class="form example">
             <div class="form example">
                 <label for="name">Enter you name here:
                 </label>
@@ -84,11 +83,15 @@
 
         <form>
             <fieldset>
-                <legend>choose a number</legend>
+                <legend>choose a animal</legend>
+                <input type="radio" name="animal" id="dog">
+                <label for="dog">dog</label><br>
 
-                <label for="1">1</label><br>
-                <label for="2">2</label><br>
-                <label for="3">3</label><br>
+                <input type="radio" name="animal" id="cat">
+                <label for="cat">cat</label><br>
+
+                <input type="radio" name="animal" id="goat">
+                <label for="goat">goat</label><br>
             </fieldset>
         </form>
 
@@ -97,7 +100,7 @@
 
         <hr>
         <label for="color">Choose a color:</label>
-        <input list="color" id="color choice" name="color choice" />
+        <input list="color" id="color-choice" name="color-choice" />
 
         <datalist id="color">
             <option value="black">
