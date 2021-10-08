@@ -6,9 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer first Brainstorm</title>
     <link rel="icon" href="https://ia601503.us.archive.org/21/items/favicon_202110/favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+            h1  {
+                background-color: powderblue;
+                text-align: center;
+                font-family: 'Akronim', cursive;
+            }
+            @media only screen and (max-width: 600px){
+                h1 {
+                    background-color: springgreen;
+                }
+            }
+            
+            html    {font-size: 20px;}
+            
+            h2  {
+                font-size: 1.0cm;
+                text-decoration: underline;
+            }
+            p   {font-size: 3mm;}
+            span    {font-size: 2em;}
+            div  {font-size: 1.5rem;}
+            h3  {font-size: 2vw;}
+
+
+            .flex-container {
+                display: flex;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                align-content: flex-end;
+                background-color: purple;
+            }
+            .flex-container > div{
+                background-color: rosybrown;
+                margin: 8px;
+                padding: 10px;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                grid-gap: 15px;
+                padding: 8px;
+            }
+
+            .grid-container > div {
+                background-color: skyblue;
+                margin: 8px;
+                padding: 10px;
+            }
+
+        </style>
+
         <h1>Pomodoro Timer First Brainstorm</h1>
 
         <nav>
@@ -24,10 +78,10 @@
     <main>
         <h2 id="attendance-list">attendance-list</h2>
         
-        <h3>person1</h3>
-        <h3>person2</h3>
-        <h3>person3</h3>
-        <h3>person4</h3>
+        <h3 style="color: aqua;">person1</h3>
+        <h3 style="color: #0000ff;">person2</h3>
+        <h3 style="color: rgb(255, 0, 0, 0.5);">person3</h3>
+        <h3 style="color: hsl(90deg, 100%, 50%);">person4</h3>
         
         <h2 id="agenda-item">agenda-item</h2>
         <ol>
@@ -70,17 +124,53 @@
 
         <hr>
 
-        <div>div example</div>
-        <span>span example</span>
+        <div id="identified" class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <div class="grid-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        <span>span example</span> <span>span example</span>
 
         <form method="get" class="form example">
-            <div class="form example">
+            <span class="form example">
                 <label for="name">Enter you name here:
                 </label>
                 <input type="text" name="name" id="name" required>
-            </div>
+            </span>
         </form>
+        <h4>display none</h4>
+        
+        <hr>
+        <div>
+            <span>Descendant Combinator example</span>
+        </div>
+        <hr>
 
+        <ul>
+            <li>child</li>
+            <li>combinator</li>
+            <li>example</li>
+        </ul>
+        
+        <hr>
+
+        <div>
+            <p>Paragraph 1 in the div.</p>
+            <p>Paragraph 2 in the div.</p>
+          </div>
+
+        <hr>
+
+        <p class="intro">example for combine selectors</p>
+        
         <hr>
 
         <form>
@@ -116,6 +206,11 @@
         <button class="style" type="button">
             this is a button
         </button>
+
+        <h5>max-width example</h5>
+        <h6>min-width example</h6>
+
+        <p class="warning">red warning</p>
 
     </main>
 
